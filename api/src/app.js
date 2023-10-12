@@ -14,4 +14,12 @@ app.get('/', (req, res) => {
     res.status(200).send('OK');
 });
 
+app.get('/users', (req, res) => {
+    res.status(200).send('Im in /users');
+});
+
+app.get('/users/:id', (req, res) => {
+    res.status(200).send('Im in /users/:id');
+});
+
 module.exports = app;
