@@ -22,4 +22,12 @@ app.get('/users/:id', (req, res) => {
     res.status(200).send('Im in /users/:id');
 });
 
+app.get('/posts', (req, res) => {
+    res.status(200).send('Using posts');
+});
+
+app.get('/posts/:id', (req, res) => {
+    res.status(200).send('Using posts/:id');
+});
+
 module.exports = app;
